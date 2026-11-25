@@ -6,21 +6,21 @@
   font-style: normal;
   font-weight: 200 800;
   font-display: swap;
-  src: url("https://danielc.rocks/fonts/newsreader-normal.woff2") format("woff2");
+  src: url("https://chen.rocks/fonts/newsreader-normal.woff2") format("woff2");
 }
 @font-face {
   font-family: "Newsreader";
   font-style: italic;
   font-weight: 200 800;
   font-display: swap;
-  src: url("https://danielc.rocks/fonts/newsreader-italic.woff2") format("woff2");
+  src: url("https://chen.rocks/fonts/newsreader-italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 100 800;
   font-display: swap;
-  src: url("https://danielc.rocks/fonts/jetbrains-mono.woff2") format("woff2");
+  src: url("https://chen.rocks/fonts/jetbrains-mono.woff2") format("woff2");
 }
 
 main {
@@ -135,4 +135,6 @@ main .gsc-comment-box {
   border-radius: 6px;
 }
 
-.gsc-loading-image { filter: hue-rotate(200deg); }
+.gsc-loading-image {
+  filter: hue-rotate(200deg);
+}

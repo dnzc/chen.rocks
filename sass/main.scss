@@ -69,7 +69,7 @@ body {
 
 // site header + content column
 main {
-  max-width: 40rem;
+  max-width: 45rem;
   margin: 1.5rem auto 4rem;
 }
 .site-header {
@@ -78,10 +78,10 @@ main {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
-  max-width: 40rem;
+  max-width: 45rem;
   margin: 1.5rem auto 0;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
+  // border-bottom: 1px solid var(--border);
 }
 .site-title { font-size: 1.1rem; color: var(--text-bright); font-weight: 700; }
 .site-nav a { margin-left: 1.25rem; color: var(--text-main); }
@@ -92,7 +92,7 @@ main {
 
 
 .site-footer {
-  max-width: 40rem;
+  max-width: 45rem;
   margin: 4rem auto 2rem;
   text-align: center;
   color: var(--text-muted);
@@ -460,10 +460,10 @@ $thm-accents: (
 
 // brief highlight on the box you land on
 .thmbox { scroll-margin-top: 1rem; }
-.xref-flash { animation: xref-flash 1.3s ease; }
+.xref-flash { animation: xref-flash 1.6s ease; }
 @keyframes xref-flash {
-  0%, 20% { background: color-mix(in srgb, var(--thm-accent) 24%, transparent); }
-  100% { background: color-mix(in srgb, var(--thm-accent) 7%, transparent); }
+  0%, 30% { box-shadow: 0 0 0 3px var(--thm-accent); }
+  100% { box-shadow: 0 0 0 3px transparent; }
 }
 
 h2, h3 { scroll-margin-top: 1.5rem; } // margin for anchor jumps
@@ -503,7 +503,7 @@ h2, h3 { scroll-margin-top: 1.5rem; } // margin for anchor jumps
   .toc {
     position: fixed;
     top: 5rem;
-    left: calc(50% - 36rem);
+    left: calc(50% - 37rem);
     width: 12rem;
     max-height: calc(100vh - 7rem);
     overflow-y: auto;

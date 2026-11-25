@@ -47,7 +47,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="danielc" />
+  <meta name="apple-mobile-web-app-title" content="chen.rocks" />
   <link rel="manifest" href="/site.webmanifest" />
 
   <meta name="author" content="Daniel Chen" />
@@ -316,6 +316,23 @@
         void node.offsetWidth; // restart the animation
         node.classList.add('xref-flash');
       }
+      function flashAfterScroll(node) {
+        // fire the highlight only once the smooth scroll has stopped
+        var settle, fired = false;
+        function done() {
+          if (fired) return;
+          fired = true;
+          window.removeEventListener('scroll', onScroll);
+          flash(node);
+        }
+        function onScroll() {
+          window.clearTimeout(settle);
+          settle = window.setTimeout(done, 30); // 50ms with no scroll = settled
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        // if the target is already in view no scroll fires, so flash shortly anyway
+        settle = window.setTimeout(done, 80);
+      }
       function addReturnPill(y) {
         var pill = document.createElement('button');
         pill.type = 'button';
@@ -349,7 +366,7 @@
           addReturnPill(window.scrollY);
           try { history.pushState(null, '', '#' + r.id); } catch (err) {}
           r.node.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          flash(r.node);
+          flashAfterScroll(r.node);
         });
       });
     })();

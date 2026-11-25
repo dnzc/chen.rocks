@@ -3,14 +3,14 @@ title = "About"
 template = "plainpage.html"
 +++
 
-# About
+# About Me
 
-## Attribution
+## Contact
 
-The design of this site is based on [cgad.ski](https://cgad.ski/blog/entropy-of-a-mixture.html)'s beautiful math explainers. I also took heavy inspiration from [ekunazanu.foo](https://ekunazanu.foo), and from the GOAT [Giles Castel](https://castel.dev/notes) for the Lecture Notes page. The colourscheme of this site is [Atom One Light](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight); the main typeface is [Newsreader](https://fonts.google.com/specimen/Newsreader) and the monospace is [JetBrains Mono](https://www.jetbrains.com/lp/mono/).
+[Email](mailto:dc872@cam.ac.uk) · [LinkedIn](https://www.linkedin.com/in/daniel-z-chen/) · [GitHub](https://github.com/dnzc)
 
-This entire website is just a bunch of Markdown files, compiled using [Zola](https://www.getzola.org/) (see why I chose to use it [here](@/posts/2026-06-14-rebirth/index.md)).
+Or you can give me anonymous feedback [here](https://www.admonymous.co/chen).
 
-## Terms of Use
+## More
 
-The content of this website is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). In other words, you can use any of what I created in any way you wish, just please don't sue me (attribution would be nice too).
+There's not much more to this site. [Or is there?](@/more.md)

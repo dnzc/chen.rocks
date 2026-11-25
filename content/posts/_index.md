@@ -6,5 +6,3 @@ page_template = "post.html"
 +++
 
 # Blog Posts
-
-Disclaimer: I am not responsible for the loss of brain cells you are about to experience.
